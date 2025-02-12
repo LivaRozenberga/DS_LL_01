@@ -27,12 +27,10 @@ class LinkedList:
         slow = self.head
         fast = self.head
         
-        # Traverse the linked list with slow and fast pointers
         while fast is not None and fast.next is not None:
             slow = slow.next
             fast = fast.next.next
             
-        # Return the node where the slow pointer stopped
         return slow
 
 
